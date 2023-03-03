@@ -1,0 +1,33 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model CustomerService {
+  id              String   @id @default(uuid())
+  date            DateTime
+  name            String
+  phone_number    String
+  cpf_cnpj        String
+  answer          String
+  option          String
+  protocol        String
+  code            String
+  external_number String
+  agent           String
+  channel         String
+  account         String
+  service         String
+  uf              String
+  created_at      DateTime @default(now())
+
+  @@unique([protocol])
+  @@map("customer_services")
+}
