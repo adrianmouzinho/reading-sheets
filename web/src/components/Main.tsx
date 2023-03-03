@@ -20,8 +20,8 @@ export function Main() {
     <div className="w-full flex">
       <Sidebar />
 
-      {/* <ChartBox /> */}
-      <ServicesBox />
+      <ChartBox />
+      {/* <ServicesBox /> */}
     </div>
   )
 }
