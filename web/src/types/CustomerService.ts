@@ -2,13 +2,13 @@ export type CustomerService = {
   id: string
   date: string
   name: string
-  phoneNumber: string
-  cpfCnpj: string
+  phone_number: string
+  cpf_cnpj: string
   response: string
   option: string
   protocol: string
   code: string
-  externalNumber: string
+  external_number: string
   agent: string
   channel: string
   account: string

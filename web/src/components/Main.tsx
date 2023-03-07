@@ -5,23 +5,14 @@ import { ServicesBox } from './ServicesBox'
 
 import { Sidebar } from './Sidebar'
 
+
+
+export type Route = 'dashboard' | 'services'
+
 export function Main() {
-  const [list, setList] = useState<CustomerService[]>([])
-
-  // async function getList() {
-  //   const response = await fetch('http://localhost:3333/customerServices')
-  //   const data = await response.json()
-  //   setList(data)
-  // }
-
-  // getList()
+  
 
   return (
-    <div className="w-full flex">
-      <Sidebar />
-
-      <ChartBox />
-      {/* <ServicesBox /> */}
-    </div>
+    <h1>oi</h1>
   )
 }

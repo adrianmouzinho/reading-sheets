@@ -2,12 +2,6 @@ import { Request, Response } from "express"
 import { prisma } from "../../database/client"
 import dayjs from "dayjs"
 
-// import utc from 'dayjs/plugin/utc' 
-// import timezone from 'dayjs/plugin/timezone' 
-
-// dayjs.extend(utc)
-// dayjs.extend(timezone)
-
 export async function listCustomerServicesBetweenDates(req: Request, res: Response) {
   try {
     const { startDate, endDate } = req.query

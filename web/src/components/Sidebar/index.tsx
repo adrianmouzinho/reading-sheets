@@ -1,5 +1,6 @@
-import { SquaresFour, UserList } from "phosphor-react";
-import { NavLink } from "./NavLink";
+import { SquaresFour, UserList } from 'phosphor-react'
+
+import { NavLink } from './NavLink'
 
 export function Sidebar() {
   return (
