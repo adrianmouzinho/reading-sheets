@@ -1,7 +1,7 @@
 import { ApexOptions } from 'apexcharts'
 import ReactApexChart from 'react-apexcharts'
 
-export function Chart() {
+export function Area() {
   const options: ApexOptions = {
     chart: {
       toolbar: {

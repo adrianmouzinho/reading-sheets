@@ -35,12 +35,16 @@ export async function listCustomerServices(req: Request, res: Response) {
     const prev = offsetNumber - limitNumber
     const prevUrl = prev >= 0 ? `/customerServices?limit=${limitNumber}&offset=${prev}` : null
 
+    const currentPage = Math.floor(offsetNumber / limitNumber) + 1
+
     return res.json({
       prevUrl,
       nextUrl,
       limit: limitNumber,
       offset: offsetNumber,
+      total: count,
       totalPages,
+      currentPage,
       results: customerServices,
     })
   } catch (error) {

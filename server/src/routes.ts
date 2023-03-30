@@ -11,6 +11,7 @@ import { listCustomerServicesBetweenDates } from './use-cases/customer-services/
 import { getAnswerCount } from './use-cases/customer-services/get-answer-count'
 import { getAnswerCountByAgent } from './use-cases/customer-services/get-answer-count-by-agent'
 import { getAnswerCountByService } from './use-cases/customer-services/get-answer-count-by-service'
+import { listCustomerServicesByAnswer } from './use-cases/customer-services/list-customer-services-by-answer'
 
 // const multerConfig = multer()
 
@@ -38,6 +39,8 @@ routes.get('/customerServices/count/agent', getAnswerCountByAgent)
 routes.get('/customerServices/count/service', getAnswerCountByService)
 
 routes.get('/customerServices', listCustomerServices)
+
+routes.get('/customerServices/answer', listCustomerServicesByAnswer)
 
 routes.get('/customerServices/:id', listCustomerServiceById)
 

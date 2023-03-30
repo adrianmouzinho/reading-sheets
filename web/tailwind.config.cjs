@@ -5,7 +5,12 @@ module.exports = {
     '*.html'
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        layout: '250px 1fr',
+        mobile: '60px 1fr',
+      }
+    },
   },
   plugins: [],
 }

@@ -1,6 +1,6 @@
 export function Profile() {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-4 max-[780px]:hidden">
       <div className="flex flex-col text-right">
         <strong className="text-zinc-800">Adrian Mouzinho</strong>
         <span className="text-sm text-zinc-500">

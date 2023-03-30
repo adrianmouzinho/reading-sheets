@@ -5,3 +5,7 @@
 input {
   all: unset;
 }
+
+a.active span, a.active svg {
+  color: rgb(59 130 246);
+}

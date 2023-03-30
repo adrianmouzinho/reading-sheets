@@ -1,6 +1,5 @@
 import { Request, Response } from 'express'
 import { prisma } from '../../database/client'
-import dayjs from 'dayjs'
 
 export async function getAnswerCount(req: Request, res: Response) {
   try {
@@ -24,14 +23,11 @@ export async function getAnswerCount(req: Request, res: Response) {
 
     const total = await prisma.customerService.count()
 
-
-    console.log(dayjs("2023-02-02T23:07:10.000Z").startOf('day').toDate())
-
     return res.json({
       counts: {
-        good,
-        regular,
-        bad,
+        'Bom/ótimo': good,
+        'Regular': regular,
+        'Ruim': bad,
       },
       total,
     })

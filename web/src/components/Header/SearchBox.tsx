@@ -2,7 +2,7 @@ import { MagnifyingGlass } from "phosphor-react";
 
 export function SearchBox() {
   return (
-    <div className="px-8 py-4 max-w-[25rem] bg-blue-100 flex items-center rounded-full">
+    <div className="px-8 py-4 min-w-[25rem] bg-blue-100 flex items-center rounded-full max-[780px]:flex-1">
       <input 
         type="text"
         placeholder="Buscar na plataforma"

@@ -3,14 +3,8 @@ import { SearchBox } from "./SearchBox";
 
 export function Header() {
   return (
-    <header className="w-full flex items-center">
-      <h1 className="text-3xl font-bold text-zinc-800 w-full max-w-[16rem]">
-        dashibl<span className="text-blue-600">.</span>
-      </h1>
-
-      <div className="flex-1">
-        <SearchBox />
-      </div>
+    <header className="w-full flex items-center justify-between max-[780px]:pr-4">
+      <SearchBox />
 
       <Profile />
     </header>
