@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Plus } from 'phosphor-react'
 
-import { Footer } from '../components/Services/Footer'
 import { ServicesList } from '../components/Services/ServicesList'
 import { UploadModel } from '../components/UploadModel'
 
@@ -37,8 +36,6 @@ export function Services() {
         </header>
 
         <ServicesList />
-
-        {/* <Footer /> */}
       </main>
     </>
   )

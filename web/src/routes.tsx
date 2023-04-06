@@ -1,19 +1,18 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter, redirect } from "react-router-dom";
 import { Dashboard } from "./pages/Dashboard";
 import { Services } from "./pages/Services";
 import { Default } from "./layouts/Default";
+import { Login } from "./pages/Login";
 
 export const router = createBrowserRouter([
-  
   {
     path: '/',
     element: <Default />,
     children: [
       {
         path: '/',
-        element: <Dashboard />
+        element: <Navigate to='/dashboard' />
       },
-    
       {
         path: '/dashboard',
         element: <Dashboard />
@@ -24,5 +23,8 @@ export const router = createBrowserRouter([
         element: <Services />
       }
     ],
+  }, {
+    path: '/login',
+    element: <Login />
   }
 ])
